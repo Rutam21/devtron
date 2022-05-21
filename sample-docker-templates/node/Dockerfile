@@ -1,5 +1,5 @@
 # Base Image
-From node:16.13.1
+From node:gallium-buster
 
 # Seeting up env as production
 ENV NODE_ENV=production
