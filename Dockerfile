@@ -9,7 +9,7 @@ WORKDIR /go/src/github.com/devtron-labs/devtron
 ADD . /go/src/github.com/devtron-labs/devtron/
 RUN GOOS=linux make
 
-FROM alpine:3.13
+FROM alpine:3.15
 RUN apk add --no-cache ca-certificates
 RUN apk update
 RUN apk add git
