@@ -20,7 +20,7 @@ RUN npm run build
 ###### PRODUCTION ENVIRONMENT ######
 
 # Base Image for prod env
-FROM nginx:stable-alpine
+FROM nginx:1.27.2-alpine3.20
 
 # Adding the build files from previous container to nginx/html
 COPY --from=build /app/build /usr/share/nginx/html
